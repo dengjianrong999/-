@@ -1,0 +1,52 @@
+<view class="container">
+  <view class="navigat">
+    <text class="title">详情页</text>
+    <block wx:if="{{details.home}}">
+      <view class='backBox' bindtap='backHome'>
+        <image src="../../images/fanhui@2x.png" class='back'></image>
+      </view>
+    </block>
+     <block wx:if="{{!details.home}}">
+      <view class='backBox' bindtap='backTo'>
+        <image src="../../images/fanhui@2x.png" class='back'></image>
+      </view>
+    </block>
+  </view>
+  <view class="mainContent">
+    <view class='images01'>
+      <image style='width:100%;' src="{{details.images}}"></image>
+    </view>
+    <view class='introduce'>
+      <image style='width:100%;height:100%;' src='../../images/biaoti2@2x.png'></image>
+      <block wx:if="{{details.id == 2-1}}">
+        <view>设备服务</view>
+      </block>
+      <block wx:if="{{details.id != 2-1}}">
+        <view>系统介绍</view>
+      </block>
+    </view>
+    <view class='introduceContent'>
+      {{details.introText}}
+      <image class='topD' style='width:21px;height:31px' src='../../images/dian1@2x.png'></image>
+      <image class='botD' style='width:43px;height:53px' src='../../images/dian2@2x.png'></image>
+    </view>
+    <block wx:if="{{details.arrows}}">
+      <view class='targets'>
+        <view class='introduce'>
+          <image style='width:100%;height:100%;' src='../../images/biaoti2@2x.png'></image>
+          <view>{{details.mark}}</view>
+        </view>
+        <image class='decorate' src='../../images/shu1@2x.png'></image>
+        <view class='targetsFor' wx:for='{{details.arrows}}'>
+          <view class='Outfit'>
+            <image style='width:100%;height:100%;' src='../../images/biaoti@2x.png'></image>
+            <view>{{item.title}}</view>
+          </view>
+          <view class='thought'>{{item.content}}</view>
+          <image wx:if='{{index != 0}}' class='imLeft' src='../../images/lianjie@2x.png'></image>
+          <image wx:if='{{index != 0}}' class='imRight' src='../../images/lianjie@2x.png'></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

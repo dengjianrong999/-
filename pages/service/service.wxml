@@ -1,0 +1,42 @@
+<!--pages/servive/servive.wxml-->
+<view class="container">
+  <view class="navigat">
+    <text class="title">产品服务 </text>
+    <view class='backBox'  bindtap='backTo'>
+      <image src="../../images/fanhui@2x.png" class='back'></image>
+    </view>
+
+  </view>
+  <view class='serviceType'>
+    <view class='menuList' wx:for="{{list}}">
+      <view style="width:100%" class="image">
+        <image style='width:100%' src='{{item.img}}' mode='widthFix'>
+        </image>
+        <text class="serTitle">{{item.title}}</text>
+        <text class="nums">共{{item.num}}个</text>
+      </view>
+      <view wx:if="{{item.open}}" class="{{item.open? 'showClass':'hideClass' }}">
+        <view class='twoList' wx:for="{{item.child}}" wx:for-item="child" animation="{{textLeftAnimation}}">
+          <view data-child="{{child}}" bindtap="linkTo" class='twoTitle'>{{child.title}}</view>
+          <image src="../../images/tiaozhuan@2x.png"></image>
+        </view>
+      </view>
+      <view class='oneList' data-id="{{item.id}}" bindtap="clickOne">
+
+        <block wx:if="{{item.open}}">
+          <view class='oneTitle'>
+            <view>{{item.name}}</view>
+            <image src="../../images/shouqi@2x.png"></image>
+          </view>
+        </block>
+        <block wx:if="{{!item.open}}">
+          <view class='oneTitle'>
+            <view>查看更多</view>
+            <image src="../../images/xiala@2x.png"></image>
+          </view>
+        </block>
+      </view>
+
+    </view>
+  </view>
+</view>

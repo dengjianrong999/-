@@ -1,0 +1,101 @@
+/* pages/introduction/introduction.wxss */
+.mainConten{
+  margin-top: 180rpx;
+  overflow: scroll;
+}
+swiper {
+  height: 340rpx;
+}
+.introduction{
+  width: 100%;
+  padding: 0 20rpx;
+
+}
+.comtitle{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  
+}
+.cotitle{
+  position: absolute;
+  color: #fff;
+  top: 25rpx;
+  font-size: 35rpx;
+  left: 50%;
+  margin-left: -40rpx;
+}
+.detail{
+  position: absolute;
+  top: 620rpx;
+  left: 20rpx;
+  font-size: 28rpx;
+  padding: 20rpx;
+  text-align: justify;
+}
+.history{
+  margin-top: 20rpx;
+  position: relative;
+}
+.hisT{
+  height: 60rpx;
+  position: absolute;
+  margin-top:20rpx;
+}
+
+
+
+/* 时间轴 */
+.histTime{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top:100rpx;
+  margin-top:30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.histTime>view{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cireOut{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+  background: #d5f3fe;
+  border: 3rpx solid #2777e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cireT{
+  width: 26rpx;
+  height: 26rpx;
+  border-radius: 13rpx;
+  background-color: #2777e9;
+}
+.line{
+  width: 6rpx;
+  height: calc(100% - 70rpx);
+  margin: 8rpx 0 8rpx 23rpx;
+  background-color: #2777e9;
+}
+.lineTimeDetail{
+  width: 80%;
+  padding: 20rpx;
+  margin-bottom: 40rpx;
+  border-radius: 0 50rpx 50rpx 50rpx;
+  margin-left: 25rpx;
+  background-color: #fff;
+  font-size: 26rpx;
+}
+.lineTimeDetail view{
+  color: #666;
+  text-align: justify;
+}

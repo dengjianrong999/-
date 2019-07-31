@@ -1,0 +1,61 @@
+<!--pages/introduction/introduction.wxml-->
+<view class="container">
+  <view class="navigat">
+    <text class="title">公司介绍 </text>
+    <view class='backBox'  bindtap='backTo'>
+      <image src="../../images/fanhui@2x.png" class='back'></image>
+    </view>
+  </view>
+
+  <view class='mainConten'>
+    <swiper indicator-dots="{{indicatorDots}}" circular="{{circular}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image style='width:100% ' src="{{item}}" mode='widthFix' bindtap="linkCom"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class="introduction">
+      <view class="comtitle">
+        <image style='width:400rpx' src="../../images/biaoti2@2x.png" mode='widthFix' class="topImg"></image>
+        <text class='cotitle'>公司简介</text>
+      </view>
+      <image style='width:100% ;margin-top:20rpx' src="../../images/kuang1@2x.png" mode='widthFix' bindtap="linkCom"></image>
+      <view class="detail">
+        <text>
+        广州市广软科技有限公司（简称"广软科技"）成立于2003年8月。公司以服务于环 水、创新于环水为己任，致力于运用各种先进感知技术、网络技术及信息技术构筑 “感知测量更透彻，互联互通更可靠，智能应用更深入”的“智慧环水、生态环 水”物联网体系，并以此为载体，进一步探索中国环水新道路，不断地为各级环保 水务部门、为企业、为社会提供环境保护和生态安全方面的最佳技术服务以及信息 化解决方案，从而推动“数字城市”向“智慧城市”的转变。
+        </text>
+        <text class='titleb'>
+ 公司由一支高水平、高学历的技术队伍组成，拥有一流研发团队和核心技术，建立了独立的市场运作、项目实施、运维服务的专业服务体系，共享公司的研发与服务 资源，先后承担了多个省、市、区的科研项目，完成多个环保、水务信息化示范基 地的建设，是环保、水务信息化的领航者及技术先锋。
+ </text>
+      </view>
+      <view class="history">
+        <view class="comtitle hisT">
+          <image style='width:400rpx' src="../../images/biaoti2@2x.png" mode='widthFix' class="topImg"></image>
+          <text class='cotitle'>发展历程</text>
+        </view>
+        <image style='width:100% ' src="../../images/kuang2@2x.png" mode='widthFix' bindtap="linkCom"></image>
+        <view class="histTime">
+          <view wx:for="{{limeTime}}">
+            <view class="lineTime">
+              <view class="cireOut">
+                <view class='cireT'></view>
+              </view>
+              <block wx:if="{{item.id != limeTime.length }}">
+                <view class="line"></view>
+              </block>
+            </view>
+            <view class="lineTimeDetail">
+              <text>{{item.time}}</text>
+              <view>{{item.text}}
+              </view>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+</view>

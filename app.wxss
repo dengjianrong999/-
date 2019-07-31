@@ -1,0 +1,79 @@
+/**app.wxss**/
+
+page {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+}
+
+.container {
+  background: #f8f8f8;
+  overflow: scroll;
+}
+
+.navigat {
+  height: 160rpx;
+  width: 100%;
+  background: -webkit-linear-gradient(left, #119bfd, #119afd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.title {
+  color: #fff;
+  position: absolute;
+  top: 90rpx;
+  z-index: 999;
+}
+.backBox{
+  width: 100rpx;
+  height: 60rpx;
+   position: absolute;
+  left: 0rpx;
+  top: 100rpx;
+}
+.back {
+  width: 20rpx;
+  height: 30rpx;
+  position: absolute;
+  left: 30rpx;
+  top: 0;
+}
+
+view {
+  box-sizing: border-box;
+}
+
+.cire {
+  height: 50rpx;
+  padding: 0rpx 15rpx;
+  border-top-left-radius: 100rpx;
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+  background-color: #49a7ff;
+  position: absolute;
+  left: 50%;
+  top: -20rpx;
+  z-index: 999;
+  margin-left: -100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+.cire view{
+  padding:0 10rpx;
+}
+.cire .dot {
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding:0 0rpx;
+}

@@ -1,0 +1,111 @@
+/* pages/servive/servive.wxss */
+.container{
+  overflow: scroll;
+}
+.oneTitle {
+  width: 90%;
+  padding: 10rpx;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 0 0 45rpx 45rpx;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10rpx;
+  box-shadow: -1px 5px 7px #d0c8c8;
+}
+
+.oneTitle view {
+  color: #666;
+}
+
+.oneTitle image {
+  width: 30rpx;
+  height: 20rpx;
+  margin-left: 5rpx;
+}
+
+.image {
+  position: relative;
+  color: #fff;
+}
+
+.image .serTitle {
+  position: absolute;
+  left: 200rpx;
+  top: 50rpx;
+  color: #fff;
+}
+
+.image .nums {
+  position: absolute;
+  right: 45rpx;
+  top: 50rpx;
+}
+
+.twoTitle {
+  width: 100%;
+  transition: all 0.3s;
+  background: #fff;
+  padding-left: 15rpx;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.menuList {
+  width: calc(100% - 60rpx);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+
+.oneList, .twoList {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+.twoList{
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  position: relative;
+
+}
+.twoList image{
+  width: 20rpx;
+  height: 30rpx;
+  position: absolute;
+  right:15rpx;
+  top:50%;
+  margin-top: -15rpx;
+}
+
+.twoTitle:hover {
+  background-color: #cce4ff;
+}
+
+.serviceType {
+  width: 100%;
+  height: 100%;
+  margin-top: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showClass {
+  width: 90%;
+  background-color: #fff;
+  box-shadow: -1px 5px 7px #d0c8c8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:-7rpx;
+
+}

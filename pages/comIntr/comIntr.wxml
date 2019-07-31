@@ -1,0 +1,58 @@
+<!--pages/comIntr/comIntr.wxml-->
+<view class="container">
+  <view class="navigat">
+    <text class="title">联系我们 </text>
+    <view class='backBox'  bindtap='backTo'>
+      <image src="../../images/fanhui@2x.png" class='back'></image>
+    </view>
+  </view>
+  <view class='topImg'>
+    <!-- <image style='width:750px' src='../../images/bg1@2x.png' mode='widthFix' bindtap="linkCom"></image> -->
+  </view>
+  <view class="detalInf">
+    <view class="cire">
+      <view class='dot'></view>
+      <view>联系我们</view>
+      <view class='dot'></view>
+    </view>
+    <view class="lit">
+      <view class='lists'>
+        <view>
+          <image src="../../images/dianhua@2x.png"></image>
+        </view>
+        <text>电话：020-31420346</text> </view>
+    </view>
+    <view class="lit">
+      <view class='lists'>
+        <view>
+          <image src="../../images/wangzhan@2x.png"></image>
+        </view>
+        <text>网站：http://www.soft-gr.com</text>
+      </view>
+    </view>
+    <view class="lit">
+      <view class='lists'>
+        <view>
+          <image src="../../images/youbian@2x.png"></image>
+        </view>
+        <text>邮编：510660</text>
+      </view>
+    </view>
+    <view class="lit">
+      <view class='lists'>
+        <view>
+          <image src="../../images/youxiang@2x.png"></image>
+        </view>
+        <text>邮箱：daoguangx@soft-gr.com</text>
+      </view>
+    </view>
+    <view class="lit">
+      <view class='lists lisbot'>
+        <view>
+          <image src="../../images/dizhi@2x.png"></image>
+        </view>
+        <text>地址：广东省广州市天河区中山大道西89号华景软件园B栋西梯B802</text>
+      </view>
+    </view>
+  </view>
+</view>
