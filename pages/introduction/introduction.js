@@ -44,8 +44,8 @@ Page({
     // indicatorDots: true,
     autoplay: true,
     circular: true,
-    interval: 5000,
-    duration: 1000
+    interval: 2500,
+    duration: 800
   },
 
   /**
