@@ -25,21 +25,21 @@ Page({
     listD: [{
         id: '1',
         title: "广州环境信息资源共享平台",
-        images: '../../images/ziyuangongxiang.png',
+        images: '../../images/ziyuangongxiang1.png',
         child: [{
           mark: '系统目标',
           home: true,
-          images: '../../images/ziyuangongxiang.png',
+          images: '../../images/ziyuangongxiang1.png',
           introText: '以“一大平台、两个中心”作为核心设计理念，其中“一大平台”是指在全面融合各类环保数据资源的基础上，通过大数据、云计算等先进技术手段，构建统一标准、规范的智慧环保大数据服务平台。“两个中心”分别指“环境数据资源中心”、“综合业务办公中心”。 环境数据资源中心实现了数据层面的集成，能够帮助广州市环保局解决数据资源标准规范、来源不统一，数据质量、数据唯一性无法保障、数据资源难以交互共享等问题。综合业务办公中心实现了业务应用层面的集成，可为环保局其他应用系统提供统一的入口，提供便捷的应用导航功能。',
         }]
       }, {
         id: '2',
         title: "广东省固废监管平台",
-        images: '../../images/feiwujiancepingtai@2x.png',
+        images: '../../images/feiwujiancepingtai@2x1.png',
         child: [{
           mark: '系统目标',
           home: true,
-          images: '../../images/feiwujiancepingtai@2x.png',
+          images: '../../images/feiwujiancepingtai@2x1.png',
           introText: '广东省危险废物管理GIS信息管理系统，实现了对广东省危险废物的信息化全过程监管，将传统的人工办理、纸质办理转移至互联网平台，实现了固体废物申报登记的网上申报、危险废物转移计划网上报送、网上转移联单报送与电子联单验证，并设计危险废物转移GPS监管子系统，实现对安装了GPS车载终端的危险废物运输车辆的实时监控，加强了对危险废物运输的动态监管。',
         }]
 

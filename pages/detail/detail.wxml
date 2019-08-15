@@ -14,7 +14,7 @@
   </view>
   <view class="mainContent">
     <view class='images01'>
-      <image style='width:100%;' src="{{details.images}}"></image>
+      <image style='width:100%;'   mode="widthFix" src="{{details.images}}"></image>
     </view>
     <view class='introduce'>
       <image style='width:100%;height:100%;' src='../../images/biaoti2@2x.png'></image>
